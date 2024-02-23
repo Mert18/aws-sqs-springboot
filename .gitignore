@@ -1,0 +1,7 @@
+message-receiver/src/main/resources/application.properties
+message-publisher/src/main/resources/application.properties
+
+message-receiver/target
+message-publisher/target
+
+.idea
