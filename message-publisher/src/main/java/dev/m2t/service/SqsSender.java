@@ -17,7 +17,7 @@ public class SqsSender {
     public SendResult<String> sendMessage(SqsMessage message) {
         return sqsTemplate.send(sqsSendOptions -> {
             sqsSendOptions
-                    .queue(message.getQueue())
+                    .queue("springb-queue")
                     .payload(message.getMessage());
         });
     }
